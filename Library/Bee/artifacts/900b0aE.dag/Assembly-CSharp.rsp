@@ -402,8 +402,6 @@
 "Assets/Animation/Scripts/SimpleFunction.cs"
 "Assets/AR/Scripts/ARButtonManager.cs"
 "Assets/AR/Scripts/ImageRecognition.cs"
-"Assets/ExampleAssets/Scripts/AnchorCreator.cs"
-"Assets/ExampleAssets/Scripts/ARFeatheredPlaneMeshVisualizer.cs"
 -langversion:9.0
 
 /deterministic
