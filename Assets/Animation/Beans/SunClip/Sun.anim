@@ -683,8 +683,8 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.016666668
-    functionName: setSunFalse
+  - time: 0
+    functionName: SetWaterFalse
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
