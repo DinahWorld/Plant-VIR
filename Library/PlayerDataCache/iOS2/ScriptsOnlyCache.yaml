@@ -3,8 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - ARButtonManager
     - AnimationController
-    - ImageRecognition
-    - SimpleFunction
+    - MainMenu
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputActionReference
@@ -16,6 +15,11 @@ ScriptsOnlyBuild:
     - Unity.PlasticSCM.Editor.PlasticWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
     Unity.Timeline.Editor.dll:
     - TimelinePreferences
     - UnityEditor.Timeline.SequenceHierarchy
@@ -78,11 +82,9 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnimatorStateTransitionInspector
     - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateEditor
     - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
@@ -93,6 +95,7 @@ ScriptsOnlyBuild:
     - UnityEngine.SpatialTracking.TrackedPoseDriver
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
@@ -107,6 +110,20 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.InputBinding
     - UnityEngine.InputSystem.InputControlScheme
     - UnityEngine.InputSystem.InputControlScheme/DeviceRequirement
+    Unity.TextMeshPro:
+    - TMPro.FaceInfo_Legacy
+    - TMPro.FontAssetCreationSettings
+    - TMPro.KerningTable
+    - TMPro.TMP_Character
+    - TMPro.TMP_FontFeatureTable
+    - TMPro.TMP_FontWeightPair
+    - TMPro.TMP_GlyphAdjustmentRecord
+    - TMPro.TMP_GlyphPairAdjustmentRecord
+    - TMPro.TMP_GlyphValueRecord
+    - TMPro.TMP_Sprite
+    - TMPro.TMP_SpriteCharacter
+    - TMPro.TMP_SpriteGlyph
+    - TMPro.TMP_Style
     Unity.XR.ARSubsystems:
     - UnityEngine.XR.ARSubsystems.SerializableDictionary`2/KeyValuePair[System.String,System.Byte[]]
     - UnityEngine.XR.ARSubsystems.SerializableDictionary`2[System.String,System.Byte[]]
@@ -116,6 +133,11 @@ ScriptsOnlyBuild:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
     - UnityEngine.Events.PersistentListenerMode
+    UnityEngine.TextCoreFontEngineModule:
+    - UnityEngine.TextCore.FaceInfo
+    - UnityEngine.TextCore.Glyph
+    - UnityEngine.TextCore.GlyphMetrics
+    - UnityEngine.TextCore.GlyphRect
     UnityEngine.UI:
     - UnityEngine.UI.AnimationTriggers
     - UnityEngine.UI.Button/ButtonClickedEvent
@@ -126,13 +148,16 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: PlayApp
+  - assembly: Assembly-CSharp
     fullTypeName: ARButtonManager
     methodName: OnSunButtonClick
   - assembly: Assembly-CSharp
     fullTypeName: ARButtonManager
     methodName: OnWaterButtonClick
   sceneClasses:
-    Assets/Scenes/Plant.unity:
+    Assets/Scenes/MainApp.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -180,8 +205,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4804}
     - Class: 114
-      Script: {instanceID: 4880}
-    - Class: 114
       Script: {instanceID: 5628}
     - Class: 114
       Script: {instanceID: 6098}
@@ -193,8 +216,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7706}
     - Class: 114
       Script: {instanceID: 7748}
-    - Class: 114
-      Script: {instanceID: 8008}
     - Class: 114
       Script: {instanceID: 9024}
     - Class: 114
@@ -228,6 +249,67 @@ ScriptsOnlyBuild:
     - Class: 320
       Script: {instanceID: 0}
     - Class: 850595691
+      Script: {instanceID: 0}
+    Assets/Scenes/Menu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1660}
+    - Class: 114
+      Script: {instanceID: 2520}
+    - Class: 114
+      Script: {instanceID: 3162}
+    - Class: 114
+      Script: {instanceID: 3454}
+    - Class: 114
+      Script: {instanceID: 3866}
+    - Class: 114
+      Script: {instanceID: 5398}
+    - Class: 114
+      Script: {instanceID: 5784}
+    - Class: 114
+      Script: {instanceID: 6862}
+    - Class: 114
+      Script: {instanceID: 7706}
+    - Class: 114
+      Script: {instanceID: 8438}
+    - Class: 114
+      Script: {instanceID: 29084}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -784,12 +866,6 @@ ScriptsOnlyBuild:
     className: ARKitLoader
   - hash:
       serializedVersion: 2
-      Hash: ed531ff2e895bd8dc9f1d11280f2288f
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: SimpleFunction
-  - hash:
-      serializedVersion: 2
       Hash: 552dca338f20933ce362ebbe559a6aa6
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -800,12 +876,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.CoreUtils
     namespaceName: Unity.XR.CoreUtils
     className: XROrigin
-  - hash:
-      serializedVersion: 2
-      Hash: 0635649ed6cbb2f2ccb678166f80b02b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ARFeatheredPlaneMeshVisualizer
   - hash:
       serializedVersion: 2
       Hash: 95426d463074947dcbffc797c44e779c
@@ -1288,12 +1358,6 @@ ScriptsOnlyBuild:
     className: HandInteractionProfile
   - hash:
       serializedVersion: 2
-      Hash: fe59a150a5814db6113c2a00c55dbb6c
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ImageRecognition
-  - hash:
-      serializedVersion: 2
       Hash: f80587da72ceed966d1c1f2096a626b7
     assemblyName: Unity.XR.OpenXR
     namespaceName: UnityEngine.XR.OpenXR.Features.Interactions
@@ -1472,12 +1536,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionExitMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 4d6824e33056c9265a538a0283502f98
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: AnchorCreator
   - hash:
       serializedVersion: 2
       Hash: d12b219dbec553062bcbea9e5cbbfbd4
@@ -1826,7 +1884,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: fe4c75203a9743390fe41454f7d841d0
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MainMenu
   platform: 9
   scenePathNames:
-  - Assets/Scenes/Plant.unity
+  - Assets/Scenes/Menu.unity
+  - Assets/Scenes/MainApp.unity
   playerPath: /Users/dinathsunthararajah/Documents/VIR/Build

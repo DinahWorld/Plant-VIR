@@ -86,6 +86,7 @@ UnityEngine.Application::OpenURL
 UnityEngine.Application::Quit
 UnityEngine.Application::set_targetFrameRate
 UnityEngine.Application::get_platform
+UnityEngine.AsyncOperation::InternalDestroy
 UnityEngine.Audio.AudioClipPlayable::InternalCreateAudioClipPlayable
 UnityEngine.Audio.AudioClipPlayable::SetPauseDelayInternal
 UnityEngine.Audio.AudioClipPlayable::SetSpatialBlendInternal
@@ -677,7 +678,6 @@ UnityEngine.Renderer::get_sortingGroupOrder
 UnityEngine.Renderer::get_sortingLayerID
 UnityEngine.Renderer::get_sortingOrder
 UnityEngine.Renderer::set_enabled
-UnityEngine.Renderer::GetMaterial
 UnityEngine.Rendering.CommandBuffer::ValidateAgainstExecutionFlags
 UnityEngine.Rendering.CommandBuffer::InitBuffer
 UnityEngine.Rendering.CommandBuffer::Blit_Texture_Injected
@@ -717,6 +717,7 @@ UnityEngine.Resources::GetBuiltinResource
 UnityEngine.ResourcesAPIInternal::Load
 UnityEngine.ResourcesAPIInternal::FindObjectsOfTypeAll
 UnityEngine.ResourcesAPIInternal::FindShaderByName
+UnityEngine.SceneManagement.SceneManagerAPIInternal::LoadSceneAsyncNameIndexInternal_Injected
 UnityEngine.Screen::get_fullScreen
 UnityEngine.Screen::get_height
 UnityEngine.Screen::get_width
@@ -789,7 +790,9 @@ UnityEngine.TextCore.LowLevel.FontEngine::TryGetGlyphWithUnicodeValue_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::TryGetSystemFontReference_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::GetFaceInfo_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::GetPairAdjustmentRecordsFromMarshallingArray
+UnityEngine.TextCore.LowLevel.FontEngine::InitializeFontEngine_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::LoadFontFace_With_Size_And_FaceIndex_Internal
+UnityEngine.TextCore.LowLevel.FontEngine::LoadFontFace_With_Size_FromFont_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::LoadFontFace_With_Size_and_FaceIndex_FromFont_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::LoadFontFace_With_Size_by_FamilyName_and_StyleName_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::PopulatePairAdjustmentRecordMarshallingArray_from_KernTable
