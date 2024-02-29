@@ -152,10 +152,10 @@ ScriptsOnlyBuild:
     methodName: PlayApp
   - assembly: Assembly-CSharp
     fullTypeName: ARButtonManager
-    methodName: OnSunButtonClick
+    methodName: OnWaterButtonClick
   - assembly: Assembly-CSharp
     fullTypeName: ARButtonManager
-    methodName: OnWaterButtonClick
+    methodName: OnSunButtonClick
   sceneClasses:
     Assets/Scenes/MainApp.unity:
     - Class: 1
@@ -1890,6 +1890,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: MainMenu
+  - hash:
+      serializedVersion: 2
+      Hash: 85a6a73fbb4b13cfc8c376633fb6469a
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MarkerTrackingManager
   platform: 9
   scenePathNames:
   - Assets/Scenes/Menu.unity

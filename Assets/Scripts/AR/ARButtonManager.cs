@@ -19,6 +19,7 @@ public class ARButtonManager : MonoBehaviour
 
     public void OnWaterButtonClick()
     {
+        Debug.Log(animationController);
         water = true;
         if (animationController != null)
         {

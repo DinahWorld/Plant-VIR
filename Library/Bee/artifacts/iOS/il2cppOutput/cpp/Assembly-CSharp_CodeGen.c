@@ -23,11 +23,19 @@ extern void ARButtonManager_OnSunButtonClick_mAC942F85F391FD4D848976992375BCCFAC
 extern void ARButtonManager_OnWaterButtonClick_mD8ABBB4F10A1E8CF44C66A7E22FBB609CFEA13D5 (void);
 extern void ARButtonManager_Update_m030608A059DDE491F85C8562E922FFAEF90F6819 (void);
 extern void ARButtonManager__ctor_m821BAD7FBA91896BFFB42DF06EA53E443A6928ED (void);
+extern void MarkerTrackingManager_Start_mF5A961442FD104D105D9BAF603F735EC3A73A649 (void);
+extern void MarkerTrackingManager_Update_mF9CB04D41DE8D5B9F0869B3244448F70CC89FDB7 (void);
+extern void MarkerTrackingManager_OnEnable_mA26AFFD37811F4C33B32283F1BA1A442516075F5 (void);
+extern void MarkerTrackingManager_OnDisable_m085AB1A3CB100F69E1C258A6A9C214A25B078D76 (void);
+extern void MarkerTrackingManager_ImageFound_m5CE6B09C5154229954AA5B02D3551DE838D85DAD (void);
+extern void MarkerTrackingManager_SpawnARModel_mFA66878654B6F97123A866C2CFD0DF2B6AE7FC41 (void);
+extern void MarkerTrackingManager_HideARModel_m4D323E064540080596D0C6D7F980A5AA4E5F1665 (void);
+extern void MarkerTrackingManager__ctor_m174990E83DDA9CD43A6353B8A2EB051A146193C5 (void);
 extern void MainMenu_PlayApp_m60D525F6A2396B665FC0703929205429779F85DA (void);
 extern void MainMenu__ctor_m8209CEC1D907C87A96D777961F4D0536E6E948DD (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[15] = 
+static Il2CppMethodPointer s_methodPointers[23] = 
 {
 	AnimationController_Start_mC2E6E251390BCB44555D1877E2866D31B49B1E06,
 	AnimationController_Update_mED7CBCC3A8D88C345162363E4137119CE52B209D,
@@ -40,12 +48,20 @@ static Il2CppMethodPointer s_methodPointers[15] =
 	ARButtonManager_OnWaterButtonClick_mD8ABBB4F10A1E8CF44C66A7E22FBB609CFEA13D5,
 	ARButtonManager_Update_m030608A059DDE491F85C8562E922FFAEF90F6819,
 	ARButtonManager__ctor_m821BAD7FBA91896BFFB42DF06EA53E443A6928ED,
+	MarkerTrackingManager_Start_mF5A961442FD104D105D9BAF603F735EC3A73A649,
+	MarkerTrackingManager_Update_mF9CB04D41DE8D5B9F0869B3244448F70CC89FDB7,
+	MarkerTrackingManager_OnEnable_mA26AFFD37811F4C33B32283F1BA1A442516075F5,
+	MarkerTrackingManager_OnDisable_m085AB1A3CB100F69E1C258A6A9C214A25B078D76,
+	MarkerTrackingManager_ImageFound_m5CE6B09C5154229954AA5B02D3551DE838D85DAD,
+	MarkerTrackingManager_SpawnARModel_mFA66878654B6F97123A866C2CFD0DF2B6AE7FC41,
+	MarkerTrackingManager_HideARModel_m4D323E064540080596D0C6D7F980A5AA4E5F1665,
+	MarkerTrackingManager__ctor_m174990E83DDA9CD43A6353B8A2EB051A146193C5,
 	MainMenu_PlayApp_m60D525F6A2396B665FC0703929205429779F85DA,
 	MainMenu__ctor_m8209CEC1D907C87A96D777961F4D0536E6E948DD,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[15] = 
+static const int32_t s_InvokerIndices[23] = 
 {
 	7195,
 	7195,
@@ -60,14 +76,22 @@ static const int32_t s_InvokerIndices[15] =
 	7195,
 	7195,
 	7195,
-	11155,
+	7195,
+	7195,
+	5491,
+	5634,
+	5634,
+	7195,
+	7195,
+	7195,
+	11157,
 	7195,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	15,
+	23,
 	s_methodPointers,
 	0,
 	NULL,
